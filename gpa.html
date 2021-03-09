@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            GPAcalculator
+        </title>
+    </head>
+    <body>
+        <table align="center" width=50%>
+            <tr align="center">
+                <td style="background: aqua;"><h3><a href = "home.html">Home</a></td></h3>
+                <td style="background: aqua;"><h3><a href = "gallery.html">Gallery</a></td></h3>
+                <td style="background: aqua;"><h3><a href = "contacts.html">Contacts</a></td></h3>
+                <td style="background: aqua;"><h3><a href = "gpa.html">GPA</a></td></h3>
+            </tr>
+        </table>
+        <center>
+        <h1>
+            GPA calculator
+        </h1>
+        </center>
+        <br><br>
+        <form action="#" id="form">
+            <table width="80%" align="center" style="padding: 15px;  border:2px solid; ">
+                <tbody>
+                    <tr>
+                        <tr>
+                            <td>
+                                <h4>
+                                    <label><san style="padding: 20px;">Subject:</san></label>
+                                </h4>
+                            </td>
+                            <td>
+                                <input size="50%" id="subject" type="text" name="subject" value width="50px" placeholder="subject name" style="padding: 10px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>
+                                    <label><san style="padding: 20px;">Subject code:</san></label>
+                                </h4>
+                            </td>
+                            <td>
+                                <input size="50%" id="code-subject" type="text"  name="code-subject" value width="50px" placeholder="subject code" style="padding: 10px;" ></input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>
+                                    <label><san style="padding: 20px;">Semester:</san></label>
+                                </h4>
+                            </td>
+                            <td>
+                                <form >
+                                    <input id="term1" type="radio" name="term" value="term1">
+                                    <label for="term1"><san>1st Semester</san></label>
+                                    <input id="term2" type="radio" name="term" value="term2">
+                                    <label for="term2"><san>2nd Semester</san></label>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>
+                                    <label><san style="padding: 20px;">Grade:</san></label>
+                                </h4>
+                            </td>
+                            <td>
+                                <select name ="gpa" id = "gpa" itemref="gpa" >
+                                    <optgroup label="GPA">
+                                        <option value="A" >A</option>
+                                        <option value="B+">B+</option>
+                                        <option value="B">B</option>
+                                        <option value="C+">C+</option>
+                                        <option value="C">C</option>
+                                        <option value="D+">D+</option>
+                                        <option value="D">D</option>
+                                        <option value="F">F</option>
+                                    </optgroup><br>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                            </td>
+                            <td style="padding: 30px;" >
+                                <submit><input width="80%" type="submit" name="submit" value="submit"  style="color: black;"></submit>
+                            </td>
+                        </tr>
+                    </tr>
+                </tbody>
+            </table><br>
+        </form>
+        
+
+        <br>
+    <table width="80%" align="center" style="padding: 15px;  border:2px solid; ">
+        <thead>
+            <tr>
+                <td>
+                    <center>
+                        <h2><san style="color: black; border: black;">1st Semester</san></h2>
+                    </center>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="80%" align="center" style="background-color: transparent;">
+                        <thead>
+                            <tr>
+                                <tr>
+                                    <td width="50%">
+                                        <h3><san style="color: black;">Subject name</san></h3>
+                                    </td>
+                                    <td width="25%">
+                                        <h3><san style="color: black;">Subject code</san></h3>
+                                    </td>
+                                    <td width="15%">
+                                        <h3><san style="color: black;">Grade(s)</san></h3>
+                                    </td>
+                                </tr>
+                            </tr>
+                        </thead>
+                        <tbody id="showtable">
+                            
+                        </tbody>
+                        
+                    </table>
+                </td>
+            </tr>
+        </thead> 
+    </table><br><br>
+    <table width="80%" align="center" style="padding: 15px;  border:2px solid; ">
+        <tbody>
+            <tr>
+                <td width="20%">
+                    <h4><san style="color: black; border: black;">1st Semester's GPA : </san></san></h4>
+                </td>
+                <td id="td_grade_1" style="color: black;">
+                    
+                </td>
+            </tr>
+        </tbody>  
+    </table>
+    <br><br>
+
+
+    <table width="80%" align="center" style="padding: 15px;  border:2px solid; ">
+        <thead>
+          <tr>
+              <td>
+                  <center>
+                      <h2><san style="color: black; border: black;">2nd Semester </san></h2>
+                  </center>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <table width="80%" align="center" style="background-color: transparent;">
+                      <thead>
+                          <tr>
+                              <tr>
+                                  <td width="50%">
+                                      <h3><san style="color: black;">Subject name</san></h3>
+                                  </td>
+                                  <td width="25%">
+                                      <h3><san style="color: black;">Subject code</san></h3>
+                                  </td>
+                                  <td width="15%">
+                                      <h3><san style="color: black;">Grade(s)</san></h3>
+                                  </td>
+                              </tr>
+                          </tr>
+                      </thead>
+                      <tbody id="showtable_2">
+                          
+                      </tbody>
+                  </table>
+              </td>
+          </tr>
+      </thead>
+    </table><br><br>
+    <table width="80%" align="center" style="padding: 15px;  border:2px solid; ">
+      <tbody>
+          <tr>
+              <td width="20%">
+                  <h4><san style="color: black; border: black;">2nd Semester's GPA : </san></san></h4>
+              </td>
+              <td id="td_grade_2" style="color: black;">
+                  
+              </td>
+          </tr>
+      </tbody>  
+  </table>
+  <br><br>
+
+  <table width="80%" align="center" style="padding: 15px;  border:2px solid; ">
+    <thead>
+        <tr>
+            <td width="40%">
+                <h4><san style="color: black; border: black;">Major's subject GPA (261xxx/269xxx) :</san></h4>
+            </td>
+            <td id="261_grade" style="color: black;">
+               
+            </td>
+        </tr>
+  </thead>
+</table>
+  <br>
+
+    </html>
+    <script src="gpa.js"></script>
+    </body>
+</html>
